@@ -1,4 +1,4 @@
-   /*!
+  /*!
  * CookieConsent v2.8.6
  * https://www.github.com/orestbida/cookieconsent
  * Author Orest Bida
@@ -587,6 +587,7 @@ if (document.readyState === 'loading') {  // Loading hasn't finished yet
 
 function doSomething() {
 
+ console.log("ran");
       
   const ytEmbed = document.querySelector('#yt-video-embed')
   
