@@ -1,4 +1,4 @@
-  /*!
+   /*!
  * CookieConsent v2.8.6
  * https://www.github.com/orestbida/cookieconsent
  * Author Orest Bida
@@ -579,7 +579,9 @@ currentScript.insertAdjacentElement('beforebegin', btn);
 }
   
 
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
+  
+  console.log("ran");
 
       
   const ytEmbed = document.querySelector('#yt-video-embed')
