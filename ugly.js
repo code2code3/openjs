@@ -579,9 +579,13 @@ currentScript.insertAdjacentElement('beforebegin', btn);
 }
   
 
-window.addEventListener('load', () => {
-  
-  console.log("ran");
+if (document.readyState === 'loading') {  // Loading hasn't finished yet
+    document.addEventListener('DOMContentLoaded', doSomething);
+  } else {  // `DOMContentLoaded` has already fired
+    doSomething();
+  }
+
+function doSomething() {
 
       
   const ytEmbed = document.querySelector('#yt-video-embed')
@@ -621,4 +625,4 @@ window.addEventListener('load', () => {
       
   }
     
-})
+}
