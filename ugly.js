@@ -578,12 +578,13 @@ currentScript.insertAdjacentElement('beforebegin', btn);
    currentScript.parentElement.insertBefore(toc, currentScript)
 }
   
-  
-  setTimeout(() => {
+
       
-         const ytEmbed = document.querySelector('#yt-video-embed')
+  const ytEmbed = document.querySelector('#yt-video-embed')
   
   if (ytEmbed) {
+
+    setTimeout(() => {
       
    ytEmbed.remove();
 
@@ -615,9 +616,7 @@ currentScript.insertAdjacentElement('beforebegin', btn);
        iframe.setAttribute('allowfullscreen', '');
        document.querySelector('#yt-video-embed').appendChild(iframe);
        
-
+    }, 3500)
       
   }
-      
-  }, 3500)
-  
+    
