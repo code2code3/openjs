@@ -1,4 +1,4 @@
- /*!
+  /*!
  * CookieConsent v2.8.6
  * https://www.github.com/orestbida/cookieconsent
  * Author Orest Bida
@@ -583,8 +583,6 @@ currentScript.insertAdjacentElement('beforebegin', btn);
   const ytEmbed = document.querySelector('#yt-video-embed')
   
   if (ytEmbed) {
-
-    setTimeout(() => {
       
    ytEmbed.remove();
 
@@ -605,6 +603,7 @@ currentScript.insertAdjacentElement('beforebegin', btn);
    }
    
        
+   setTimeout(() => {
        const ytId = document.querySelector('#yt-video-embed').getAttribute('yt-src');
        const iframe = document.createElement('iframe');   
        iframe.width = '560';
