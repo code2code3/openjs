@@ -224,7 +224,7 @@ async function loader() {
   
   
  } else {
-  if ('inEU' === 'true) {
+  if ('inEU' === 'true') {
    loadLimited();   
   } else {
     loadComplete();
