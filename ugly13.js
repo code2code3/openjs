@@ -251,12 +251,12 @@ async function loader() {
             <ins class="adsbygoogle"
              style="display:block; text-align:center;"
              data-ad-layout="in-article"
-             data-ad-format="atuo"
+             data-ad-format="auto"
              data-ad-client="ca-pub-7737139499802016"
              data-ad-slot="7224289835"></ins>
             `;
             
-            document.querySelector('.flex-top').innerHTML = ins;
+            document.querySelector('#bottom').innerHTML = ins;
            
             const pushScript = document.createElement('script');
             pushScript.innerHTML = "(adsbygoogle = window.adsbygoogle || []).push({});";
