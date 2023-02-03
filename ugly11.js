@@ -244,6 +244,26 @@ async function loader() {
             document.body.appendChild(pushScript);
            
          }
+     
+            if (document.querySelector('#bottom')) {
+            
+            const ins = `
+            <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-layout="in-article"
+             data-ad-format="atuo"
+             data-ad-client="ca-pub-7737139499802016"
+             data-ad-slot="7224289835"></ins>
+            `;
+            
+            document.querySelector('.flex-top').innerHTML = ins;
+           
+            const pushScript = document.createElement('script');
+            pushScript.innerHTML = "(adsbygoogle = window.adsbygoogle || []).push({});";
+           
+            document.body.appendChild(pushScript);
+           
+         }
 
        
        // if (document.querySelector('.toc_list')) {
