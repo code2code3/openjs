@@ -648,7 +648,7 @@ function doSomething() {
     const ytId = document.querySelector('#yt-video-embed').getAttribute('yt-src');
 
        const iframe = document.createElement('iframe');  
-       iframe.setAttribute('data-src', 'https://www.youtube-nocookie.com/embed/"+ytId+"?controls=0');
+       iframe.setAttribute('data-src', `https://www.youtube-nocookie.com/embed/${ytId}?controls=0`);
        iframe.className = "lazy";
        iframe.width = '560';
        iframe.height = '315';
