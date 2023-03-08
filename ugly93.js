@@ -23,6 +23,8 @@
      if (hasISO) {
        inEU = (EUCodes.includes(res[1]));
        console.log("inEU="+inEU);  
+      
+       sessionStorage.setItem('inEU', (EUCodes.includes(res[1])))
    
      } else {
        if (document.readyState !== 'loading') {
