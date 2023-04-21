@@ -629,9 +629,11 @@ function doSomething() {
    }
 
     const ytId = document.querySelector('#yt-video-embed').getAttribute('yt-src');
-
+   
+      setTimeout(() => {
+       
        const iframe = document.createElement('iframe');  
-       iframe.setAttribute('data-src', `https://www.youtube-nocookie.com/embed/${ytId}?controls=0`);
+       iframe.setAttribute('src', `https://www.youtube-nocookie.com/embed/${ytId}?controls=0`);
        iframe.width = '560';
        iframe.height = '315';
        iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
@@ -639,6 +641,8 @@ function doSomething() {
        iframe.setAttribute('frameborder', '0');
        iframe.setAttribute('allowfullscreen', '');
        document.querySelector('#yt-video-embed').appendChild(iframe);
+      
+      },0)
       
   }
     
