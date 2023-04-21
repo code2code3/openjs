@@ -632,7 +632,6 @@ function doSomething() {
 
        const iframe = document.createElement('iframe');  
        iframe.setAttribute('data-src', `https://www.youtube-nocookie.com/embed/${ytId}?controls=0`);
-       iframe.className = "lazy";
        iframe.width = '560';
        iframe.height = '315';
        iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
